@@ -310,19 +310,3 @@ Searching.Sampling.sumstats <- function(ITT_Y, ITT_D, V_Gamma, V_gamma, VHat, n1
   return(list(CI.union=CI.union,rule=rule,CI=CI))
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
