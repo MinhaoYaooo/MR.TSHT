@@ -1,6 +1,12 @@
 # MR.TSHT
 `MR.TSHT` is an R package to conduct two-sample Mendelian randomization using two-stage hard thresholding. The inputs of `MR.TSHT` are summary statistics which can be obtained in Genome-Wide Association Studies (GWAS). The outputs of `MR.TSHT` are the estimation of causal effect and its corresponding confidence interval, and a set of valid IVs <img src="https://render.githubusercontent.com/render/math?math=\hat{V}">.
 
+# Installation
+You can install the development version of `MR.TSHT` from Github via the `devtools` package.
+```
+devtools::install_github("MinhaoYaooo/MR.TSHT")
+```
+
 # Example
 
 We first set the following parameters:
@@ -47,6 +53,6 @@ library(igraph)
 ITT_Y = as.numeric(GWAS2$estim); ITT_D = as.numeric(GWAS1$estim) 
 SE_Y <- as.numeric(GWAS2$std.err); SE_D <- as.numeric(GWAS1$std.err);
     
-TSHT.sum <- TSHT.sumstats(ITT_Y, ITT_D, SE_Y, SE_D, n1, n2, max_clique = TRUE)
+TSHT.sum <- TSHT.sumstats(ITT_D, ITT_Y, SE_D, SE_Y, n1, n2, max_clique = TRUE)
 ```
 
