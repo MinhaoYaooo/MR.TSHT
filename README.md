@@ -56,3 +56,10 @@ SE_Y <- as.numeric(GWAS2$std.err); SE_D <- as.numeric(GWAS1$std.err);
 TSHT.sum <- TSHT.sumstats(ITT_D, ITT_Y, SE_D, SE_Y, n1, n2, max_clique = TRUE)
 ```
 
+If we wish to use Searching-and-Sampling method for constructing the robust CI, then we can use the `SearchingSampling.sumstats` function:
+
+```
+library(intervals)
+
+SS.sum <- SearchingSampling.sumstats(ITT_D, ITT_Y, SE_D, SE_Y, n1, n2)
+```
