@@ -4,9 +4,9 @@ Title: Two Sample Mendelian Randomization using Two-stage Hard Thresholding with
 Version: 0.1.0
 Author: Minhao Yao, Zijian Guo, Zhonghua Liu
 Maintainer: Minhao Yao <mhyao@connect.hku.hk>
-Description: This package provides functions for two sample Mendelian randomization with possibly many invalid instrumental variables, including the Two-Stage Hard Thresholding(TSHT) method and the Searching and Sampling method,.
+Description: This package provides functions for two sample Mendelian randomization with possibly many invalid instrumental variables, including the Two-Stage Hard Thresholding(TSHT) method and the Searching and Sampling method.
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
-Imports: AER, glmnet, MASS, Matrix, stats, foreach, doParallel, igraph, intervals
+Imports: MASS, Matrix, stats, igraph, intervals
 RoxygenNote: 7.1.2

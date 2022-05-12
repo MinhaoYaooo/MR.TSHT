@@ -5,29 +5,29 @@
 \title{TSHT using summary statistics}
 \usage{
 TSHT.sumstats(
-  ITT_Y,
   ITT_D,
-  SE_Y,
+  ITT_Y,
   SE_D,
+  SE_Y,
   n1,
   n2,
-  tuning = 1,
-  max_clique = FALSE,
+  tuning = 2.01,
+  max_clique = TRUE,
   alpha = 0.05
 )
 }
 \arguments{
-\item{ITT_Y}{a numeric vector of GWAS summary statistics of the outcome}
-
 \item{ITT_D}{a numeric vector of GWAS summary statistics of the treatment}
 
-\item{SE_Y}{a numeric vector of standard errors of ITT_Y}
+\item{ITT_Y}{a numeric vector of GWAS summary statistics of the outcome}
 
 \item{SE_D}{a numeric vector of standard errors of ITT_D}
 
-\item{n1}{the sample size of GWAS summary statistics  of the outcome}
+\item{SE_Y}{a numeric vector of standard errors of ITT_Y}
 
-\item{n2}{the sample size of GWAS summary statistics  of the treatment}
+\item{n1}{the sample size of GWAS summary statistics  of the treatment}
+
+\item{n2}{the sample size of GWAS summary statistics  of the outcome}
 
 \item{tuning}{a numeric scalar value tuning parameter for TSHT, with default 1}
 
